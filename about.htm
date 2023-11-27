@@ -62,6 +62,23 @@
     <!-----typed script for html file ----->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 
-    <script src="script.js"></script>
+    <script>
+        /*button click show hide navbar*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".nav-links");
+        var links=document.querySelector(".nav-links li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
+
+        var typed=new Typed(".input",{
+            Strings:["Frontend Developer","Web App Developer","Web Developer","Graphic Designer","Youtuber"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
 </body>
 </html>

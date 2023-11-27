@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMGA JUMAEL | ABOUT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-------font awesome cdn font icon css--------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lins/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                <div class="logo-text">Kamga Jumael</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.htm">Home</a></li>
+                        <li><a href="about.htm">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="mailto:kamgajumael@gmail.com">Contact</a></li>
+                        <li><a href="https://hakimicoder.github.io/tech2.0"> <st>Tech 2.0</st></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <!----
+                
+                ----->
+                <div class="hero-text">
+                    <h1 style="text-align: center;">About Me</h1>
+                    <p><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime ratione corporis culpa,
+                        at dignissimos et quia qui animi doloribus? Itaque officia sint doloremque exercitationem.
+                    </p>
+                    <div class="btn-group">
+                        <a href="mailto:kamgajumael@gmail.com" class="btn active">Hire Me</a>
+                        <a href="tel:+237679454785" class="btn">Call</a>
+                    </div>
+
+                   
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----typed script for html file ----->
+    <script 
+        
+        src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js">
+
+    </script>
+
+    <script>
+        /*button click show hide navbar*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".nav-links");
+        var links=document.querySelector(".nav-links li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
+
+        var typed=new Typed(".input",{
+            Strings:["Frontend Developer","Web App Developer","Web Developer","Graphic Designer","Youtuber"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
